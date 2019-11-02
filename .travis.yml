@@ -1,4 +1,6 @@
 language: node_js
+node_js:
+  - "12"
 sudo: false
 git:
   depth: 1
@@ -7,6 +9,6 @@ cache:
     - "node_modules"
     - "$HOME/.npm"
 install:
-  - npm run install
+  - npm install
 script:
-  - npm run build
+  - node bundler.js
